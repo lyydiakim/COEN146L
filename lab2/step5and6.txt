@@ -1,0 +1,52 @@
+Name: Lydia Kim
+Date: 5/25/23
+Title : Lab 2 - Step 5 and Step 6 
+Description : for step 5 this program describes the usage of telnet on a umass.edu website and
+             for step 6 i ran 3 different web hosts and wrote my observations
+
+
+STEP 5:
+
+    d: It outputs this on to my command line:
+        Trying 128.119.245.12...
+        Connected to gaia.cs.umass.edu.
+        Escape character is '^]'.
+
+        meaning that it connected to the website 
+
+    e: it outputted a big html file from the umass website
+
+    f: 
+    name of file: Interactive Problems, Computer Networking: A Top Down Approach
+    version of http: HTTP/1.1
+    formats of text and images: utf-8
+
+
+
+STEP 6:
+I ran amazon.com on the hosts 80, 3389, and 3889. It connected through 80 but not 3389 and 3889.
+
+Here are the lines from my terminal:
+        [lkim3@linux10612 lab2]$ telnet amazon.com 80
+        Trying 54.239.28.85...
+        Connected to amazon.com.
+        Escape character is '^]'.
+        ^
+        Connection closed by foreign host.
+
+        [lkim3@linux10612 lab2]$ telnet amazon.com 3889
+        Trying 54.239.28.85...
+        telnet: connect to address 54.239.28.85: Connection refused
+        Trying 205.251.242.103...
+        telnet: connect to address 205.251.242.103: Connection refused
+        Trying 52.94.236.248...
+        telnet: connect to address 52.94.236.248: Connection refused
+
+        [lkim3@linux10612 lab2]$ telnet amazon.com 3389
+        Trying 54.239.28.85...
+        telnet: connect to address 54.239.28.85: Connection refused
+        Trying 52.94.236.248...
+        telnet: connect to address 52.94.236.248: Connection refused
+        Trying 205.251.242.103...
+        telnet: connect to address 205.251.242.103: Connection refused
+

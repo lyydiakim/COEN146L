@@ -1,0 +1,91 @@
+//Name: Lydia Kim  
+//Date: 5/5/2023
+//Description: This file holds step 1 and 2 for the Lab 1 Assignment.
+//Step 1 runs various network commands in Linux and this file holds the observations for each of these commands.
+//Step 2 is to test 3 hosts on the internet and ping each host with different packet sizes. This file holds the 
+//packet loss present for each host and the RTT (round trip time).
+
+Step 1 :
+a:netstat
+	helpful to look at your networks configurations as well as activity 
+	netstat -a shows the sockets that are active and/or waiting for connection
+	netstat -r displays the kernel ip routing table 
+
+
+b:ifconfig
+	this command configures other displays network interface parameters, using TCP/IP
+	displays information of all interfaces in my system
+	when attaching -a to the command it is in place of an interface name
+
+
+c:hostname
+	displays the hostname of my Mac system 
+	this is the result when I enter in my command line: Lydias-MacBook-Pro-3.local
+	
+	man hostname is the manual shows the options -f , -s , -d 
+
+
+d:ping
+	this TCP/IP command sends an echo_request to network hosts
+	it helps you look at the connectivity and name solution and reachability
+	
+	man ping shows the ping manual with the options  -A, -a, -b, -c, -C, -D, -d ,-f
+
+
+e:traceroute
+	this command prints the route packets trace to the network host, using ICMP (internet control
+	message protocol) packets
+	these icmp packets hold information about the routers abilities to transport data
+
+
+f:telnet
+	this command is used if you need to get on a remote server at typically the http port 80 
+	telnet transfers the data in simple text, where as ssh is encrypted and uses a secure channel
+
+
+g:host/dig
+	Host: host is typically used to convert ip addresses to names and names to ip adresses, host is also 
+	a dns lookup utility, it prints a short summary of its options and command line arguments 
+
+	Dig : domain information groper, it is also a dns lookup utility, dig is used to perform dns lookups 
+	and to troubleshoot dns problems
+
+
+
+h:route
+	route is used to manually manipulate routing tables, it has six commands: add, flush, delete, change,
+	get, and monitor
+
+	it allows the user to specify an arbitrary request
+
+
+i:arp
+	this command addresses resolution display and control, it displays and modifies the internet to ethernets 	address translation tables used by arp4.
+
+
+
+
+Step 2:
+
+North America: https://www.youtube.com
+
+	packet loss: 0% packet loss
+
+	RTT "round trip time": 56.341
+
+
+Asia: https://www.coupang.com
+
+	packet loss: 0% packet loss
+
+	RTT "round trip time": 116.022
+
+
+Europe: https://harrods.com
+
+	packet loss: 0% packet loss
+
+	RTT "round trip time": 156.343
+
+
+
